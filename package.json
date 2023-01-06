@@ -1,0 +1,28 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe",
+    "lint:test": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
+    "allure-report": "allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "testcafe": "^2.0.1",
+    "testcafe-reporter-allure": "^1.0.5",
+    "xpath-to-css": "^1.1.0"
+  }
+}
